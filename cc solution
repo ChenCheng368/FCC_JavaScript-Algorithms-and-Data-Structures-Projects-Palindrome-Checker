@@ -1,0 +1,13 @@
+function palindrome(str) {
+  // Good luck!
+  var arrayStr=str.replace(/\W|_/ig,"").toLowerCase().split("");
+
+for(let i=0;i<arrayStr.length/2;i++){
+  if (arrayStr[i]!==arrayStr[arrayStr.length-i-1])
+    return false;
+}
+
+  return true;
+}
+
+console.log(palindrome("2_A3*3#A2"));
